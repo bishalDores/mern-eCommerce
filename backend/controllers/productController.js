@@ -44,16 +44,15 @@ const deleteProduct = asyncHandler(async (req, res) => {
 // @access Private/Admin
 const createProduct = asyncHandler(async (req, res) => {
   const product = new Product({
-    name: 'Guitar',
+    name: 'Sample',
     price: 0,
     user: req.user._id,
-    image: '/images/guitar.jpg',
-    brand: "VES62 '62 Strat Style SSS Electric Guitar",
+    image: '/images/sample.jpg',
+    brand: 'smaple',
     countInStock: 0,
     numReviews: 0,
-    description:
-      "The VES62 '62 style Custom Handmade Electric Guitar features a genuine Basswood body and bolt on Maple neck with a 21 fret engineered Rosewood fretboard.The double offset cutaway body is comfortable and it's classic shape is instantly recognisable. The 21 Nickel Silver semi-jumbo Frets and the beautifully tinted neck adds to the vintage look.The multi-ply pickguard looks the part and continues the vintage touch complimenting the luxurious gloss finish perfectly.",
-    category: 'Guitar',
+    description: 'smaple',
+    category: 'sample',
   });
   const createdProduct = await product.save();
   res.status(201).json(createdProduct);
