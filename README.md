@@ -2,6 +2,8 @@
 
 > eCommerce platform built with the MERN stack & Redux.
 
+## live : https://lazarshopapp.herokuapp.com/
+
 ## Features
 
 - Full featured shopping cart
